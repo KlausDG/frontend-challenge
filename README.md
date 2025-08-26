@@ -1,68 +1,61 @@
-<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME">
+# frontend-challenge
 
-# Front-end Challenge
+This template should help get you started developing with Vue 3 in Vite.
 
-Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end! 🚀
+## Recommended IDE Setup
 
-Nosso objetivo é avaliar **a qualidade da sua implementação**, considerando organização, boas práticas e clareza de código.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
----
+## Type Support for `.vue` Imports in TS
 
-## ⚡ O Desafio
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-Você deverá criar uma **página de detalhes de um processo** seguindo o layout fornecido.
+## Customize configuration
 
-**Layout disponível em:**  
-[Link do Figma](https://www.figma.com/design/Tddaiz626kkBlD4NclUS7m/Front-end-Challenge?node-id=1-4738&m=dev)
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-> Caso tenha dificuldades para acessar o layout, nos avise.
+## Project Setup
 
-Os dados apresentados pela página deverão ser consumidos através da seguinte API.
+```sh
+npm install
+```
 
-> GET https://api.mercadoe.space/orders/1
+### Compile and Hot-Reload for Development
 
----
+```sh
+npm run dev
+```
 
-## 📋 Requisitos
+### Type-Check, Compile and Minify for Production
 
-### ✅ Obrigatórios
-- **Desenvolvimento utilizando Vue2 ou Vue3**
-- **Documentação no README**
-  - Como instalar e rodar o projeto
-  - Tecnologias utilizadas
-- **Design responsivo**
-  - A página deve se adaptar a diferentes tamanhos de tela
-- **Deploy em cloud**
-  - Publicar o projeto em algum serviço (Vercel, Netlify, Render, etc.)
+```sh
+npm run build
+```
 
-### 💡 Diferenciais
-- Arquitetura simples e organizada (*Keep it simple!*)
-- Testes unitários e/ou e2e  
-  *(Jest, Vitest, Cypress, Playwright...)*
-- Boas práticas de versionamento e commits claros
-- Explicação de alterações no layout, se houver
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
----
+```sh
+npm run test:unit
+```
 
-## 🚀 Entrega
+### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
 
-Envie para o(a) recrutador(a):
+```sh
+npm run test:e2e:dev
+```
 
-1. **Link público do projeto rodando em cloud**
-2. **Código-fonte do projeto**, em uma das formas:
-   - Link para repositório público no GitHub  
-   - Fork deste repositório + branch com seu nome + Pull Request  
-   - Link de download do código
+This runs the end-to-end tests against the Vite development server.
+It is much faster than the production build.
 
----
+But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
 
-## 🔎 O que será avaliado
+```sh
+npm run build
+npm run test:e2e
+```
 
-| Critério                  | Descrição                                                                 |
-|---------------------------|---------------------------------------------------------------------------|
-| **Organização do código** | Estrutura clara, componentização e boas práticas                          |
-| **Fidelidade ao layout**  | Aderência ao design e responsividade                                      |
-| **Simplicidade**          | Solução fácil de entender e manter                                        |
-| **Testes (opcional)**     | Cobertura e qualidade dos testes unitários e/ou e2e                       |
+### Lint with [ESLint](https://eslint.org/)
 
-Boa sorte! 🎉
+```sh
+npm run lint
+```
