@@ -1,6 +1,7 @@
 import './assets/css/reset.scss'
 import { createApp } from 'vue'
 import App from './App.vue'
+import type { Plugin } from 'vue'
 import { AxiosAdapter } from './http/HttpClient'
 import { OrderGatewayHttp } from './gateway/OrderGateway'
 import Unicon from 'vue-unicons'
@@ -35,7 +36,7 @@ const httpClient = new AxiosAdapter()
 const orderGateway = new OrderGatewayHttp(httpClient)
 
 app.provide('orderGateway', orderGateway)
-app.use(Unicon, {
+app.use(Unicon as unknown as Plugin, {
   fill: '#566574',
   height: 14,
   width: 14,

@@ -24,6 +24,8 @@ describe('BillToSection.vue', () => {
   const addressData = {
     name: 'John Doe',
     address: '123 Main St',
+    label: 'teste',
+    code: '123',
     contact: {
       name: 'Jane Doe',
       email: 'jane@example.com',

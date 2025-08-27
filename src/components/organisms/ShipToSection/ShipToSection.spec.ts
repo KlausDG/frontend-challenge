@@ -37,6 +37,7 @@ describe('ShipToSection.vue', () => {
     name: 'Jane Doe',
     code: '001',
     address: '789 Shipping St',
+    label: 'teste',
     contact: {
       name: 'John Smith',
       email: 'john@example.com',
