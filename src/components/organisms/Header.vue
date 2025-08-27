@@ -15,7 +15,7 @@ defineProps<{
       <Typography tag="h4" color="secondary">{{ data.number }}</Typography>
       <Typography color="secondary">#ME{{ data.serial }}</Typography>
     </div>
-    <Stack direction="column" :spacing="12">
+    <Stack direction="column" :spacing="12" class="header__middle_section">
       <Typography tag="h5" color="dark" class="title">{{ data.buyer }}</Typography>
       <Stack direction="column" :spacing="6">
         <IconText icon="user" :text="data.contact.name" />
@@ -45,22 +45,56 @@ defineProps<{
   & > div {
     flex: 1;
   }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 .header__left_section {
   background-color: $color-primary;
-  max-width: 200px;
+  width: 200px;
   border-radius: 0 8px 8px 0;
   padding: 16px;
+  order: 1;
+
+  @media (max-width: 1024px) {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+.header__middle_section {
+  order: 2;
+
+  @media (max-width: 1024px) {
+    order: 3;
+    padding: 8px;
+  }
 }
 
 .header__right_section {
   text-align: end;
+  order: 3;
+
+  @media (max-width: 1024px) {
+    text-align: start;
+    order: 1;
+    padding: 8px;
+  }
 }
 
 .text_icon {
   align-items: center;
   justify-content: end;
+
+  @media (max-width: 1024px) {
+    justify-content: start;
+  }
 }
 
 @media (min-width: 1024px) {

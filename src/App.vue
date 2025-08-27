@@ -22,7 +22,7 @@ function toggleAddresses() {
   <main class="container">
     <div v-if="loading">Loading...</div>
     <div v-else-if="error">Erro: {{ error }}</div>
-    <Stack v-else-if="data" direction="column" :spacing="32" class="page__container">
+    <Stack v-else-if="data" direction="column" :spacing="32">
       <Header :data="data.header" />
       <SupplierSection :data="data.supplier" />
       <div>
@@ -51,6 +51,10 @@ function toggleAddresses() {
 .container {
   width: 100%;
   padding: 20px;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
 }
 
 .address__row {
