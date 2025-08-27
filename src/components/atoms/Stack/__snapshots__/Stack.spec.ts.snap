@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Stack.vue > matches the component snapshot 1`] = `
+"<div data-v-69f42c1a="" class="stack__container" style="flex-direction: column; gap: 8px;">
+  <div>Snapshot Slot</div>
+</div>"
+`;

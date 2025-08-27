@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconText.vue > matches the component snapshot 1`] = `
+"<div data-v-70c01fa4="" class="icon-text__container">
+  <unicon data-v-70c01fa4="" name="print"></unicon>
+  <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">Print Icon</p>
+</div>"
+`;

@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Badge.vue > matches the component snapshot 1`] = `
+"<div data-v-df2d503b="" class="badge__container">
+  <p data-v-df2d503b="" class="typography _caption_d0cbd2 _primary_d0cbd2">Snapshot Test</p>
+</div>"
+`;
