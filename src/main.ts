@@ -10,9 +10,25 @@ import {
   uniPhone,
   uniPrint,
   uniExclamationCircleSolid,
+  uniMapMarker,
+  uniFileLandscapeAlt,
+  uniEye,
+  uniArrowCircleDownMonochrome,
+  uniArrowCircleUpMonochrome,
 } from 'vue-unicons/dist/icons'
 
-Unicon.add([uniUser, uniEnvelope, uniPhone, uniPrint, uniExclamationCircleSolid])
+Unicon.add([
+  uniUser,
+  uniEnvelope,
+  uniPhone,
+  uniPrint,
+  uniExclamationCircleSolid,
+  uniMapMarker,
+  uniFileLandscapeAlt,
+  uniEye,
+  uniArrowCircleDownMonochrome,
+  uniArrowCircleUpMonochrome,
+])
 
 const app = createApp(App)
 const httpClient = new AxiosAdapter()

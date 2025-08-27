@@ -33,6 +33,12 @@
   line-height: $line-height-h5;
 }
 
+.h6 {
+  font-size: $font-size-h6;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-h6;
+}
+
 .pre {
   font-size: $font-size-body;
   font-weight: $font-weight-regular;
@@ -42,6 +48,11 @@
   font-size: $font-size-caption;
   font-weight: $font-weight-regular;
   line-height: $line-height-caption;
+}
+
+.semibold {
+  font-size: $font-size-body;
+  font-weight: $font-weight-semibold;
 }
 
 .primary {

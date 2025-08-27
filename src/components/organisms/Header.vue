@@ -62,6 +62,7 @@ defineProps<{
   align-items: center;
   justify-content: end;
 }
+
 @media (min-width: 1024px) {
 }
 </style>

@@ -32,6 +32,7 @@ export interface Supplier {
 }
 
 export interface Address {
+  document?: Document
   label: string
   name: string
   code: string | null
