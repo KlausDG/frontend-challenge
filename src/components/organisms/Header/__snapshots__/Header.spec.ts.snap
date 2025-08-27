@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header.vue > matches the component snapshot 1`] = `
+"<section data-v-ae2a1f96="" class="header__container">
+  <div data-v-ae2a1f96="" class="header__left_section">
+    <h2 data-v-ae2a1f96="" class="typography _h2_d0cbd2 _secondary_d0cbd2">Pre-Order</h2>
+    <h4 data-v-ae2a1f96="" class="typography _h4_d0cbd2 _secondary_d0cbd2">123</h4>
+    <p data-v-ae2a1f96="" class="typography _caption_d0cbd2 _secondary_d0cbd2">#ME456</p>
+  </div>
+  <div data-v-69f42c1a="" data-v-ae2a1f96="" class="stack__container header__middle_section" style="flex-direction: column; gap: 12px;">
+    <h5 data-v-ae2a1f96="" class="typography _h5_d0cbd2 _dark_d0cbd2 title">John Doe</h5>
+    <div data-v-69f42c1a="" data-v-ae2a1f96="" class="stack__container" style="flex-direction: column; gap: 6px;">
+      <div data-v-70c01fa4="" data-v-ae2a1f96="" class="icon-text__container">
+        <div data-v-70c01fa4="" class="mock-unicon">user</div>
+        <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">Jane Doe</p>
+      </div>
+      <div data-v-69f42c1a="" data-v-ae2a1f96="" class="stack__container" style="flex-direction: row; gap: 16px;">
+        <div data-v-70c01fa4="" data-v-ae2a1f96="" class="icon-text__container">
+          <div data-v-70c01fa4="" class="mock-unicon">envelope</div>
+          <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">jane@example.com</p>
+        </div>
+        <div data-v-70c01fa4="" data-v-ae2a1f96="" class="icon-text__container">
+          <div data-v-70c01fa4="" class="mock-unicon">phone</div>
+          <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">123456789</p>
+        </div>
+        <div data-v-70c01fa4="" data-v-ae2a1f96="" class="icon-text__container">
+          <div data-v-70c01fa4="" class="mock-unicon">print</div>
+          <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">987654321</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-v-69f42c1a="" data-v-ae2a1f96="" class="stack__container header__right_section" style="flex-direction: column; gap: 6px;">
+    <h5 data-v-ae2a1f96="" class="typography _h5_d0cbd2 _dark_d0cbd2">USD 99.99</h5>
+    <h5 data-v-ae2a1f96="" class="typography _h5_d0cbd2 _success_d0cbd2">Paid</h5>
+    <div data-v-69f42c1a="" data-v-ae2a1f96="" class="stack__container text_icon" style="flex-direction: row; gap: 4px;">
+      <p data-v-ae2a1f96="" class="typography _caption_d0cbd2 _dark_d0cbd2">Crated at 2025-08-27</p>
+      <div data-v-ae2a1f96="" class="mock-unicon">exclamation-circle</div>
+    </div>
+  </div>
+</section>"
+`;

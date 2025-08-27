@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BillTo.vue > matches the component snapshot 1`] = `
+"<section>
+  <div data-v-69f42c1a="" data-v-9bb7b3b9="" class="stack__container card__container" style="flex-direction: column; gap: 16px;">
+    <div data-v-69f42c1a="" data-v-9bb7b3b9="" class="stack__container" style="flex-direction: column; gap: 4px;">
+      <p data-v-9bb7b3b9="" class="typography _caption_d0cbd2 _text_d0cbd2">Bill to</p>
+      <p data-v-9bb7b3b9="" class="typography _semibold_d0cbd2 _text_d0cbd2">John Doe</p>
+    </div>
+    <div data-v-69f42c1a="" class="stack__container" style="flex-direction: column; gap: 4px;">
+      <div data-v-70c01fa4="" class="icon-text__container">
+        <unicon data-v-70c01fa4="" name="map-marker"></unicon>
+        <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">123 Main St</p>
+      </div>
+      <div data-v-70c01fa4="" class="icon-text__container">
+        <unicon data-v-70c01fa4="" name="user"></unicon>
+        <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">Jane Doe</p>
+      </div>
+      <div data-v-70c01fa4="" class="icon-text__container">
+        <unicon data-v-70c01fa4="" name="envelope"></unicon>
+        <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">jane@example.com</p>
+      </div>
+      <div data-v-70c01fa4="" class="icon-text__container">
+        <unicon data-v-70c01fa4="" name="phone"></unicon>
+        <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">123456789</p>
+      </div>
+      <div data-v-70c01fa4="" class="icon-text__container">
+        <unicon data-v-70c01fa4="" name="print"></unicon>
+        <p data-v-70c01fa4="" class="typography _caption_d0cbd2 _text_d0cbd2">987654321</p>
+      </div>
+    </div>
+  </div>
+</section>"
+`;
