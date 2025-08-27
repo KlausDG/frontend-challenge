@@ -10,8 +10,8 @@ import { Typography } from '@/components/atoms'
 
 <style lang="scss" scoped>
 .badge__container {
-  border-radius: 8px;
-  padding: 6px;
-  background-color: #edf3ff;
+  border-radius: $radius-md;
+  padding: $spacing-xs;
+  background-color: $color-faded;
 }
 </style>

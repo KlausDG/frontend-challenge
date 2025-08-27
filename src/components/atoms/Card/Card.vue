@@ -25,8 +25,8 @@ defineProps<{
 <style scoped lang="scss">
 .card__container {
   box-shadow: 0px 4px 8px 0px #00000014;
-  border-radius: 8px;
+  border-radius: $radius-md;
   min-width: 328px;
-  padding: 16px;
+  padding: $spacing-md;
 }
 </style>

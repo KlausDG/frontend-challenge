@@ -40,7 +40,7 @@ defineProps<{
 <style lang="scss" scoped>
 .header__container {
   display: flex;
-  gap: 32px;
+  gap: $spacing-xl;
 
   & > div {
     flex: 1;
@@ -48,15 +48,15 @@ defineProps<{
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    gap: 8px;
+    gap: $spacing-sm;
   }
 }
 
 .header__left_section {
   background-color: $color-primary;
   max-width: 200px;
-  border-radius: 0 8px 8px 0;
-  padding: 16px;
+  border-radius: 0 $radius-md $radius-md 0;
+  padding: $spacing-md;
   order: 1;
 
   @media (max-width: 1024px) {
@@ -64,7 +64,7 @@ defineProps<{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 $radius-md $radius-md;
   }
 }
 
@@ -73,7 +73,8 @@ defineProps<{
 
   @media (max-width: 1024px) {
     order: 3;
-    padding: 8px;
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
   }
 }
 
@@ -84,7 +85,8 @@ defineProps<{
   @media (max-width: 1024px) {
     text-align: start;
     order: 1;
-    padding: 8px;
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
   }
 }
 

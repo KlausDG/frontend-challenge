@@ -40,8 +40,8 @@ defineProps<{
 <style lang="scss" scoped>
 .supplier__container {
   @media (max-width: 1024px) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
   }
 }
 
@@ -52,7 +52,7 @@ defineProps<{
 .info__container {
   @media (max-width: 1024px) {
     flex-direction: column !important;
-    gap: 8px !important;
+    gap: $spacing-sm !important;
   }
 }
 

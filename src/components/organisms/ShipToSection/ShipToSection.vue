@@ -42,6 +42,4 @@ defineProps<{
 .content__column {
   width: 50%;
 }
-@media (min-width: 1024px) {
-}
 </style>

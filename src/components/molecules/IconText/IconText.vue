@@ -18,6 +18,6 @@ defineProps<{
 .icon-text__container {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: $spacing-sm;
 }
 </style>

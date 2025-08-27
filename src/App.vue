@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useOrder } from '@/composables'
-import Header from '@/components/organisms/Header.vue'
 import {
   BillToSection,
   ChargeToSection,
   SupplierSection,
   ShipToSection,
+  Header,
 } from '@/components/organisms'
 import { Stack, Typography } from '@/components/atoms'
 import { ref } from 'vue'
@@ -50,7 +50,7 @@ function toggleAddresses() {
 <style lang="scss" scoped>
 .container {
   width: 100%;
-  padding: 20px;
+  padding: $spacing-lg;
 
   @media (max-width: 1024px) {
     padding: 0;
@@ -59,8 +59,8 @@ function toggleAddresses() {
 
 .addresses_container {
   @media (max-width: 1024px) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
   }
 }
 

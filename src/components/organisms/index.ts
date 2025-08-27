@@ -2,3 +2,4 @@ export { default as SupplierSection } from './SupplierSection/SupplierSection.vu
 export { default as ShipToSection } from './ShipToSection/ShipToSection.vue'
 export { default as BillToSection } from './BillToSection/BillToSection.vue'
 export { default as ChargeToSection } from './ChargeToSection/ChargeToSection.vue'
+export { default as Header } from './Header/Header.vue'
