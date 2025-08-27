@@ -1,18 +1,63 @@
-# frontend-challenge
+<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME">
 
-This template should help get you started developing with Vue 3 in Vite.
+## ⚡ O Desafio
 
-## Recommended IDE Setup
+Criar uma **página de detalhes de um processo** seguindo o layout fornecido.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+**Layout disponível em:**  
+[Link do Figma](https://www.figma.com/design/Tddaiz626kkBlD4NclUS7m/Front-end-Challenge?node-id=1-4738&m=dev)
 
-## Type Support for `.vue` Imports in TS
+> Caso tenha dificuldades para acessar o layout, nos avise.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Os dados apresentados pela página deverão ser consumidos através da seguinte API.
 
-## Customize configuration
+> GET https://api.mercadoe.space/orders/1
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
+
+## Tecnologias utilizadas
+
+- Vue3 (Composition API)
+- TypeScript
+- Vite
+- Vitest
+- Vue Unicons
+
+## Padrões aplicados
+
+- **Arquitetura Hexagonal** - Aplicada na implementação das requisições http. Foi criada uma interface de abstração de um HTTP Client e um adaptador do Axios.
+- **Atomic Design** - Utilizada a separação de componentes em Atoms, Molecules e Organisms para melhor separação e escalabilidade.
+- **Barrel Export** - Padrão utilizado para tornar imports mais limpos e reduzir linhas de código.
+- **MVVM** - Vue é um ótimo framework para aplicação desse padrão na criação de componentes.
+- **SOLID** - Projeto desenvolvido inteiramente procurando seguir os princípios SOLID.
+
+## Alterações de design
+
+- Como não foi indicada uma biblioteca de ícones para utilizar, optei pela utilização da Vue Unicons por praticidade. Consequentemente alguns icones precisaram ser substituidos e outros possuem apenas um formato similar.
+- Como não foi providenciado nenhum layout responsivo, a definição foi feita a meu critério.
+
+## 📋 Requisitos
+
+### ✅ Obrigatórios
+
+- ✅ **Desenvolvimento utilizando Vue2 ou Vue3**
+- ✅ **Documentação no README**
+  - ✅ Como instalar e rodar o projeto
+  - ✅ Tecnologias utilizadas
+- ✅ **Design responsivo**
+  - ✅ A página deve se adaptar a diferentes tamanhos de tela
+- ✅ **Deploy em cloud**
+  - ✅ Publicar o projeto em algum serviço (Vercel, Netlify, Render, etc.)
+
+### 💡 Diferenciais
+
+- ✅ Arquitetura simples e organizada (_Keep it simple!_)
+- ✅ Testes unitários e/ou e2e _(Jest, Vitest, Cypress, Playwright...)_
+  - Dado escopo do projeto, optei por não aplicar teste e2e e substitui-los por simples snapshots.
+- ✅ Boas práticas de versionamento e commits claros
+- ✅ Explicação de alterações no layout, se houver
+
+---
 
 ## Project Setup
 
@@ -38,20 +83,10 @@ npm run build
 npm run test:unit
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+### Refresh snapshots with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
+npm run test:update
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
