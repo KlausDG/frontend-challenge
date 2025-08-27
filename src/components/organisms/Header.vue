@@ -54,13 +54,13 @@ defineProps<{
 
 .header__left_section {
   background-color: $color-primary;
-  width: 200px;
+  max-width: 200px;
   border-radius: 0 8px 8px 0;
   padding: 16px;
   order: 1;
 
   @media (max-width: 1024px) {
-    width: auto;
+    max-width: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
