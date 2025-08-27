@@ -25,7 +25,7 @@ function toggleAddresses() {
     <Stack v-else-if="data" direction="column" :spacing="32">
       <Header :data="data.header" />
       <SupplierSection :data="data.supplier" />
-      <div>
+      <div class="addresses_container">
         <button @click="toggleAddresses">
           <Stack :spacing="8" class="address__btn">
             <unicon
@@ -57,9 +57,20 @@ function toggleAddresses() {
   }
 }
 
+.addresses_container {
+  @media (max-width: 1024px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
 .address__row {
   & > section {
     flex: 1;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column !important;
   }
 }
 
