@@ -9,7 +9,7 @@ export class OrderGatewayHttp implements OrderGateway {
   constructor(readonly httpClient: HttpClient) {}
 
   async getOrderById(id: number): Promise<Order> {
-    const response = await this.httpClient.get(`/api/orders/${id}`)
+    const response = await this.httpClient.get(`http://api.mercadoe.space/orders/${id}`)
     return response
   }
 }
