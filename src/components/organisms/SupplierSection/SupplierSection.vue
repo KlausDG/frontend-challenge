@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <section>
+  <section class="supplier__container">
     <Card title="Supplier">
       <template #subtitle>
         <Stack :spacing="8" class="subtitle__container">
@@ -17,14 +17,14 @@ defineProps<{
           <Badge>#{{ data.code }}</Badge>
         </Stack>
       </template>
-      <Stack>
+      <Stack class="info__container">
         <Stack direction="column" :spacing="4" class="content__column">
           <IconText
             icon="file-landscape-alt"
             :text="`${data.document.type}: ${data.document.value}`"
           />
           <IconText icon="map-marker" :text="data.address" />
-          <IconText icon="user" :text="data.contact.email" />
+          <IconText icon="user" :text="data.contact.name" />
         </Stack>
         <Stack direction="column" :spacing="4">
           <IconText icon="envelope" :text="data.contact.email" />
@@ -38,13 +38,29 @@ defineProps<{
 </template>
 
 <style lang="scss" scoped>
+.supplier__container {
+  @media (max-width: 1024px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
 .subtitle__container {
   align-items: center;
 }
 
+.info__container {
+  @media (max-width: 1024px) {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+}
+
 .content__column {
   width: 50%;
-}
-@media (min-width: 1024px) {
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 </style>
