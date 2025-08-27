@@ -37,6 +37,7 @@ describe('SupplierSection.vue', () => {
     name: 'Supplier Inc',
     code: 'SUP001',
     address: '123 Supplier Rd',
+    lastReplyAt: '111',
     contact: {
       name: 'Alice Johnson',
       email: 'alice@example.com',

@@ -24,6 +24,8 @@ describe('ChargeToSection.vue', () => {
   const addressData = {
     name: 'Company Ltd',
     address: '456 Business Rd',
+    label: 'teste',
+    code: '123',
     contact: {
       name: 'Alice Smith',
       email: 'alice@example.com',

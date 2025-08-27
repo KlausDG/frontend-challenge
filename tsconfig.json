@@ -13,6 +13,7 @@
   ],
   "compilerOptions": {
     "module": "NodeNext",
-    "types": ["vitest", "node"]
+    "types": ["vitest", "node"],
+    "typeRoots": ["./src/types", "./node_modules/@types"]
   }
 }

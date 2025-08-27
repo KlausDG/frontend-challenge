@@ -18,7 +18,7 @@ describe('Stack.vue', () => {
   it('applies row direction by default', () => {
     const wrapper = mount(Stack)
     const container = wrapper.find('.stack__container')
-    expect(container.element.style.flexDirection).toBe('row')
+    expect((container.element as HTMLElement).style.flexDirection).toBe('row')
   })
 
   it('applies column direction when passed via props', () => {
@@ -26,7 +26,7 @@ describe('Stack.vue', () => {
       props: { direction: 'column' },
     })
     const container = wrapper.find('.stack__container')
-    expect(container.element.style.flexDirection).toBe('column')
+    expect((container.element as HTMLElement).style.flexDirection).toBe('column')
   })
 
   it('applies spacing in px when spacing prop is provided', () => {
@@ -34,13 +34,13 @@ describe('Stack.vue', () => {
       props: { spacing: 12 },
     })
     const container = wrapper.find('.stack__container')
-    expect(container.element.style.gap).toBe('12px')
+    expect((container.element as HTMLElement).style.gap).toBe('12px')
   })
 
   it('defaults spacing to 0px when spacing prop is not provided', () => {
     const wrapper = mount(Stack)
     const container = wrapper.find('.stack__container')
-    expect(container.element.style.gap).toBe('0px')
+    expect((container.element as HTMLElement).style.gap).toBe('0px')
   })
 
   it('matches the component snapshot', () => {

@@ -28,8 +28,8 @@ const UniconMock = {
 
 describe('Header.vue', () => {
   const headerData = {
-    number: '123',
-    serial: '456',
+    number: 123,
+    serial: 456,
     buyer: 'John Doe',
     contact: {
       name: 'Jane Doe',
