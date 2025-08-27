@@ -1,0 +1,65 @@
+@use '@/assets/css/_tokens.scss' as *;
+
+.typography {
+  margin: 0;
+  font-family: $font-family-base;
+}
+
+.h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bold;
+}
+
+.h2 {
+  font-size: $font-size-subtitle;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-subtitle;
+}
+
+.h3 {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-bold;
+}
+
+.h4 {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-h4;
+}
+
+.h5 {
+  font-size: $font-size-h5;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-h5;
+}
+
+.pre {
+  font-size: $font-size-body;
+  font-weight: $font-weight-regular;
+}
+
+.caption {
+  font-size: $font-size-caption;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-caption;
+}
+
+.primary {
+  color: $color-primary;
+}
+
+.secondary {
+  color: $color-secondary;
+}
+
+.text {
+  color: $color-neutral;
+}
+
+.dark {
+  color: $color-neutral-dark;
+}
+
+.success {
+  color: $color-success;
+}

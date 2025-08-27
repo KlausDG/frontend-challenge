@@ -39,7 +39,7 @@ export interface Address {
   contact: Contact
 }
 
-export interface PurchaseOrder {
+export interface Order {
   header: Header
   supplier: Supplier
   addresses: Address[]
